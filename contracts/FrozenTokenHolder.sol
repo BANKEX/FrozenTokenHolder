@@ -321,6 +321,7 @@ contract FrozenTokenHolder {
         require(_BKXtoken != address(0));
         BKXtoken = ERC20(_BKXtoken);
         require(BKXtoken.decimals() == decimals);
+        updateBalanceFromParent();
     }
 
     function updateBalanceFromParent() public returns (bool success) { //owner can increase internal total supply

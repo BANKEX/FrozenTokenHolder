@@ -185,9 +185,9 @@ async function runTests() {
         }
         res = await DeployedFrozenHolderContract.transfer(allAccounts[2], 15e9, {from: allAccounts[1]});
         console.log("\n After large transfer \n");
-        balanceIndexes = await DeployedFrozenHolderContract.balanceStructureIndexes(allAccounts[1]);
-        printResultsArray(balanceIndexes);
-        for (var ind of balanceIndexes){
+        var balanceIndexes2 = await DeployedFrozenHolderContract.balanceStructureIndexes(allAccounts[1]);
+        printResultsArray(balanceIndexes2);
+        for (var ind of balanceIndexes2){
             console.log(ind.toNumber());
             res = await DeployedFrozenHolderContract.checkBalanceStructure(allAccounts[1], ind);
             printResultsArray(res);
