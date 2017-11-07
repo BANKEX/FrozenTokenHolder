@@ -29,10 +29,15 @@ function checkBalanceStructure(address _for, uint256 _index)  public view
 There is a set of ERC20-like functions with the same functionality
 
 function transfer(address _to, uint256 _value) public returns (bool)
+
 function transferFrom(address _from, address _to, uint256 _value) public returns (bool)
+
 function approve(address _spender, uint256 _value) public returns (bool)
+
 function allowance(address _owner, address _spender) view public returns (uint256 remaining)
+
 function increaseApproval (address _spender, uint _addedValue) public returns (bool success) 
+
 function decreaseApproval (address _spender, uint _subtractedValue) public returns (bool success) 
 
 
@@ -73,10 +78,15 @@ function checkBalanceStructure(address _for, uint256 _index)  public view
 Стандартные ERC20 подобные функции соответствующие своим прототипам в стандарте ERC20
 
 function transfer(address _to, uint256 _value) public returns (bool)
+
 function transferFrom(address _from, address _to, uint256 _value) public returns (bool)
+
 function approve(address _spender, uint256 _value) public returns (bool)
+
 function allowance(address _owner, address _spender) view public returns (uint256 remaining)
+
 function increaseApproval (address _spender, uint _addedValue) public returns (bool success) 
+
 function decreaseApproval (address _spender, uint _subtractedValue) public returns (bool success) 
 
 
